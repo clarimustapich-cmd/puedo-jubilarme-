@@ -1,0 +1,40 @@
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Puedo jubilarme?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="tarjeta">
+        <div class="icono">🏖️</div>
+        <h1>¿Puedo jubilarme?</h1>
+        <p class="subtitulo">Completá tus datos y descubrilo</p>
+
+        <form id="formulario">
+            <label for="edad">Tu edad</label>
+            <input type="number" id="edad" min="0" max="120" placeholder="Ej: 58" required>
+
+            <label>Sos...</label>
+            <div class="opciones">
+                <input type="radio" name="genero" id="mujer" value="mujer" required>
+                <label for="mujer" class="opcion">👩 Mujer</label>
+
+                <input type="radio" name="genero" id="hombre" value="hombre">
+                <label for="hombre" class="opcion">👨 Hombre</label>
+            </div>
+
+            <button type="submit">Consultar</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
